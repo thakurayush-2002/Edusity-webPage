@@ -20,7 +20,7 @@ const toggleMenu=()=>{
 
   return (
     <nav className={`contenar ${sticky?"dark-nav":""}`}>
-      <img className='logo' src={logo} alt="" />
+      <img className='logo' src={logo} alt="" />git push -u origin main
       <ul className={mobileMenu ? "" :"hide-mobile-menu"}>
         <li><Link to="Hero" smooth={true} duration={500} offset={0}>Home</Link></li>
         <li> <Link to="programs" smooth={true} duration={500} offset={-260}>Program</Link></li>
@@ -31,6 +31,7 @@ const toggleMenu=()=>{
       </ul>
       <img src={menu_icon} className='menu-icon' onClick={toggleMenu} alt="" />
     </nav>
+    
     
   )
 }
